@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮Calculadora de IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/function.js"></script>
+</head>
+<body>
+    
+    <main class="container">
+        <h1>Calculadora de IMC</h1>
+        <form action="">
+            <p>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="age">Idade</label>
+                <input type="number" name="age" id="age" min="1" max="200">
+            </p>
+            <p>
+                <label for="weight">Peso</label>
+                <input type="number" name="weight" id="weight" step="0.01" min="1.01" max="500.99">
+            </p>
+            <p>
+                <label for="height">Altura</label>
+                <input type="number" name="height" id="height" step="0.01" min="0.10" max="3.00">
+            </p>
+            <div>
+                <button type="submit" id="btn-refer">Calcular</button>
+                <button type="reset" id="btn-clear">Limpar</button>
+            </div>
+            <p>
+                <label for="imc">IMC</label>
+                <input type="number" name="imc" id="imc" value="0.00" disabled>
+            </p>
+        </form>
+        <section id="result">
+            <h2>Resultados</h2>
+            <p class="person"></p>
+            <p class="person"></p>
+            <p class="person"></p>
+            <p class="person"></p>
+            <strong>
+                <p class="person"></p>
+            </strong>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main h1{
+    text-align: center;
+    padding: 20px;
+}
+section{
+    width: 60%;
+    margin: auto;
+}
+section .sorteiado{
+    font-weight: 700;
+    font-size: 2rem;
+    width: 50px;
+    border-radius: 50%;
+    background: #17af1f;
+    margin: 20px auto;
+    text-align: center;       
+}
+main img{
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+#sorteiar{
+    display: block;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    background: #17af1f;
+    margin: 10px auto; 
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+#sorteiar:hover{
+    background-color: #286d2b;
+}
+.resetar{
+    position: absolute;
+    padding: 10px;
+    background-color: #e42424;
+    border-radius: 45%;
+    margin-left: 90%;
+}
+@keyframes mover{
+    0%{
+        transform: translateY(0px);
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(50%);
+    }
+    100%{
+        transform: translateY(-15px);
+        transform: rotate(-45deg);
+        opacity: 1;
+    }
+}
+@keyframes desvanecer {
+    to{
+        opacity: 0;
+    }
+    from{
+        opacity: 1;
+    }
+}
+.animacao{
+    animation: mover .5s infinite alternate;
+}
+.aparecer{
+    animation: desvanecer .5s infinite;
+}

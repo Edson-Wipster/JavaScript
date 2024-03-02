@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-color: #ffdab9;
+    font-size: 62.5%;
+}
+.container{
+    font-family: sans-serif;
+    background-color: #ffebd07c;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin: 10px auto;
+    box-shadow: -1px .5px #c0c0c0;
+}
+.container h1{
+    font-size: 1.7rem;
+}
+form input{
+    width: 70%;
+}
+label{
+    margin-top: 15px;
+    display: block;
+    font-size: 1.3rem;
+}
+button{
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#imc{
+    margin-bottom: 20px;
+    width: 20%;
+}
+#result{
+    display: flex;
+    flex-direction: column;
+    border: .5px solid #ccc;
+    border-radius: 15px;
+}
+#result h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2px;
+    background-color: #fff;
+}
+#result p{
+    text-indent: 10px;
+    font-size: 1.3rem;
+}
+
+#result p:nth-child(1){
+    background: #fff;
+}
+#result p:nth-child(3){
+    background: #fff;
+}
+#result p:nth-child(5){
+    background: #fff;
+}

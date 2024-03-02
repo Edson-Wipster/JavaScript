@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de media</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <main id="container">
+        <h1>Calcular Media</h1>
+      
+            
+            <form action="" >
+                <p>
+                    <label for="testing1">Nota1</label>
+                    <input type="number" name="testing1" id="testing1" min="0" max="10" required autofocus onblur='validar(this)'>
+                </p>
+                <p>
+                    <label for="testing2">Nota2</label>
+                    <input type="number" name="testing2" id="testing2" min="0" max="10" required autofocus onblur=validar(this)'>
+                </p>
+                <span>
+                    <button type="submit" id="btn-result">Calcular</button>
+                    <button type="reset" id="btn-reset">Limpar</button>
+                </span>
+                <p>
+                    <label for="result">Media</label>
+                    <input type="number" name="result" id="result" readonly>
+                </p>
+                <p>
+                    <input type="text" value="Situacao Final" name="state" id="state" disabled>
+                </p>
+            </form>
+            <p id="alert" ></p>
+     
+    </main>
+
+    <script src="assets/js/function.js"></script>   
+</body>
+</html>
